@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" type="text/css" href="regstyle.css">
+</head>
+<body>
+   <div class="form">
+   <form action="/action-page.php">
+     <h1>REGISTRATION FORM</h1>
+      <div>USER NAME:</div>
+      <div><input type="text" name="username" required autofocus></div><br>
+      <div>PASSWORD:</div>
+      <div><input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" min="8" required></div><br>
+      <div>EMAIL:</div>
+      <div><input type="email" name="email" required></div><br>
+      <div>PHONE NO:</div>
+      <div><input type="number" name="number" required></div><br>
+      <div>GENDER:</div>
+      <div>
+        <input type="radio" name="gender">MALE
+        <input type="radio" name="gender">FEMALE
+        <input type="radio" name="gender">TRANSGENDER
+      </div><br>
+      <div>SPORTS:</div>
+      <div>
+        <input type="checkbox" name="hobbies">Cricket
+        <input type="checkbox" name="hobbies">Hockey
+        <input type="checkbox" name="hobbies">Football
+        <input type="checkbox" name="hobbies">Kabbadi
+        <input type="checkbox" name="hobbies">Chess
+        <input type="checkbox" name="hobbies">Badminton
+      </div><br>
+      <div>COUNTRY:
+          <select>
+              <option>INDIA</option>
+              <option>USA</option>
+              <option>AUS</option>
+              <option>UK</option>
+              <option>RUSSIA</option>
+              <option>JAPAN</option>
+          </select>
+      </div><br>
+      <div>ADDRESS:</div>
+      <address><textarea row="10px" col="10px"></textarea></address><br>
+      <button type="submit">Submit</button>
+      <button type="button">Cancel</button>
+     </form>
+    </div>
+</body>
+</html>
